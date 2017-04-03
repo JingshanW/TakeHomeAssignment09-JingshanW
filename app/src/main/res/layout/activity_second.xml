@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:id="@+id/activity_second"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -9,25 +9,29 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.example.android.takehomeassignment09_jingshanw.MainActivity">
+    tools:context="com.example.android.takehomeassignment09_jingshanw.SecondActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    <TextView
-        android:id="@+id/display_text_view"
+    <EditText
+        android:id="@+id/name_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="No Content"
-        android:textSize="30dp"
-        />
-</ScrollView>
+        android:hint="Book Name"/>
+
+    <EditText
+        android:id="@+id/yearOfPublish_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Year of Publish" />
+
+    <CheckBox
+        android:id="@+id/inStock_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In Stock?"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ADD"
-        android:onClick="add"
-        android:layout_gravity="center_horizontal"
-        />
+        android:text="Add Book"
+        android:onClick="addBook"/>
 </LinearLayout>
